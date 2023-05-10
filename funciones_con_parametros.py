@@ -1,4 +1,4 @@
-def divisibles(valor):
+"""def divisibles(valor):
     if (int(valor) % 2 == 0 and int(valor) % 3 == 0):
         print(str(valor) + " Es divisible por 2 y 3")
     else:
@@ -23,11 +23,14 @@ multiplicacion(num1 = int(input("Ingrese se primer numero:  ")),num2 = int(input
 
 def regla3 (num1, num2, num3):
     calculo = (num1 * num2)/num3
-    print ("El resultado de "+ str("(") + str(num1) + " * " + str(num2) +str(")") + str(" \ ") + str(num3) + " = "+ str(calculo))
+    print ("El resultado de " + str("(") + str(num1) + " * " + str(num2) + str(")") + str(" \ ") + str(num3) + " = " + str(calculo))
 
 regla3(num1 = int(input("Ingrese se primer numero para la regla de 3 simple:  ")),num2 = int(input("Ingrese su segundo numero:  ")),num3 = int(input("Ingrese su tercer numero:  ")))
 
-
+"""
 ###########
 
-#def potenciacion (potencia):
+def potenciacion (num1, elevacion):
+    calculo = num1 ** elevacion
+    print (" El numero: " + str(num1) + " Elevado a: " + str(elevacion) + " Es igual a: " + str(calculo))
+potenciacion(num1 = int(input(" Ingrese el numero a elevar:  ")), elevacion = int(input(" Ingrese a que potencia desea elevar el numero: ")))
